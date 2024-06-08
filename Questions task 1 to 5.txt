@@ -1,0 +1,97 @@
+
+1.Find a peak element which is not smaller than its neighbours
+
+CODE :
+
+public class Question1{
+public static void main(String[]args){
+int arr[]={10,20,30,40,50};
+System.out.println(arr.length);
+for(int i=0;i<arr.length;i++)
+System.out.println("peak value of array is="+arr[0];
+}
+}
+
+
+2.Sort an array of 0s, 1s and 2s
+
+CODE :
+
+public class Question2{
+public static void main(String[] args){
+  int arr[]={0,1,2,1,2,0,1,0,2};
+for (int i=0;i<arr.length;i++)
+if(arr[i]==0)
+  ary.add(arr[0]);
+for(int i=0;i<arr.length;i++)
+if(arr[i]==1)
+  ary.add(arr[1]);
+for(int i=0;i<arr.length;i++)
+if(arr[i]==2)
+  ary.add(arr[2]);
+System.out.println(arr);
+}
+}
+
+
+3.Write a Java program to compute a specified formula.
+
+
+CODE :
+
+public class Question3{
+public static void  main(String args[]){
+double result = 4.0*(1-(1.0/3)+(1.0/5)-(1.0/7)+(1.0/9)-(1.0/11));
+System.out.println(result);
+}
+}
+
+
+4.Write a Java program to print a face.
+
+CODE :
+
+public class Question4{
+   public static void main(String[]    args){
+   System.out.println(" +\"\"\"\"\"+ ");
+   System.out.println("[| o o |]");
+   System.out.println(" |  ^  | ");
+   System.out.println(" | '-' | ");
+   System.out.println(" +-----+ ");
+       }
+  }
+
+
+5.Write a Java program to add two binary numbers
+
+CODE :
+
+public class Question5{
+public static void main(String[] args) {
+String binary1 = "1010";
+String binary2 = "1101";
+String sum = addBinary(binary1, binary2);
+System.out.println("Sum: " + sum);
+}
+public static String addBinary(String binary1, String binary2) {
+StringBuilder sb = new StringBuilder();
+int carry = 0;
+int i = binary1.length() - 1;
+int j = binary2.length() - 1;
+while (i >= 0 || j >= 0) {
+int sum = carry;
+      if (i >= 0) {
+   sum += binary1.charAt(i--) - '0';
+      }
+  if (j >= 0) {
+     sum += binary2.charAt(j--) - '0';
+     }
+      sb.insert(0, sum % 2); 
+    carry = sum / 2;
+    }
+   if (carry > 0) {
+  sb.insert(0, carry);
+  }
+ return sb.toString();
+    }
+}
